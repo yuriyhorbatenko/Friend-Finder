@@ -1,0 +1,100 @@
+body {
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bubblegum Sans';font-size: 22px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#header {
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.623);
+}
+
+#headerText {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    bottom: 20px;
+    float: left;
+    font-weight: 400;
+    padding: 30px;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#logo {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+}
+
+#logo1 {
+    height: 60px;
+    margin-top: 5px;
+    
+}
+
+#logo2 {
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+#main_logo {
+    height: 60px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 30px;
+    margin-top: 18px;
+}
+
+#main_logo:hover {
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px outset #000000;
+    
+}
+
+#main_row {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.835);
+    border-top: 2px solid rgba(0, 0, 0, 0.623);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.623);
+    margin-top: 14%;
+}
+
+#questions {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.835);
+    margin-top: 8%;
+}
+
+footer {
+    padding-top: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.835);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 0, 0, 0.623);
+     
+}

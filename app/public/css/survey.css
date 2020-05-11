@@ -1,0 +1,182 @@
+body {
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#header {
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.623);
+}
+
+#headerText {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    bottom: 20px;
+    float: left;
+    font-weight: 400;
+    padding: 30px;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#logo {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+}
+
+#logo1 {
+    height: 60px;
+    margin-top: 5px;
+    
+}
+
+#logo2 {
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+#main_row {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.835);
+    border-top: 2px solid rgba(0, 0, 0, 0.623);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.623);
+    margin-top: 14%;
+}
+
+#questions {
+    background-color: rgba(255, 255, 255, 0.835);
+    margin-top: 10%;
+}
+
+legend {
+    text-align: center;
+    font-size: 25px;
+}
+
+#questionRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#allQuestions {
+    background-color: black;
+}
+
+#nameRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#n1 {
+    float: left;
+    
+    
+}
+
+.radiobtn {
+    width: 250px;
+    float: left;
+    padding: 5px;
+}
+
+footer {
+    padding-top: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.835);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    border-top: 2px solid rgba(0, 0, 0, 0.623);
+     
+}
+
+.radiobtn {
+    position: relative;
+    display: block;
+}
+.radiobtn label {
+    display: block;
+    background: #fee8c3;
+    color: #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid #fdd591;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.radiobtn label:before {
+    background: transparent;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+    width: 0;
+    height: 0;
+}
+.radiobtn input[type="radio"] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    appearance: none;
+}
+.radiobtn input[type="radio"]:checked + label {
+    background: #fdcb77;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    border-color: #fcae2c;
+}
+.radiobtn input[type="radio"]:checked + label:after {
+    background: #fcae2c;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #fdcb77;
+   }
+    10% {
+        background-color: #fdcb77;
+   }
+    11% {
+        background-color: #fdd591;
+   }
+    29% {
+        background-color: #fdd591;
+   }
+    30% {
+        background-color: #fdcb77;
+   }
+   
+    45% {
+        background-color: #fdcb77;
+   }
+    50% {
+        background-color: #fdd591;
+   }
+    100% {
+        background-color: #fdcb77;
+   }
+}
+
+
+
+
+
+
