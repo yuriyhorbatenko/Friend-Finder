@@ -1,5 +1,5 @@
 
-var friendsData = require("../data/friends");
+var friendsData = require("../data/friends.js");
 
 module.exports = function (app) {
 
@@ -11,7 +11,5 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
 
     });
-
-
 
 };
