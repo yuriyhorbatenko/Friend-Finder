@@ -3,13 +3,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/survey.css">
+
     <title>Find Friends</title>
+
 </head>
 
 <body>
@@ -142,6 +146,25 @@
     </div>
 
 
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl text-center" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title">Best Match for you:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="friend-name"></p>
+                    <img class="friend-img">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -160,7 +183,11 @@
 
 
 
-    <footer>Copyright&copy;</footer>
+
+    <script type="text/javascript" src="js/survey.js"></script>
+
 </body>
+
+<footer>Copyright&copy;</footer>
 
 </html>
