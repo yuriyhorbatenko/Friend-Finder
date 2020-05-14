@@ -1,5 +1,5 @@
 
-$(".btnsbmt").on("click", function (event) {
+$(".btnsbmt").on("click", function () {
 
     var newFriend = {
         name: $("#name").val().trim(),
