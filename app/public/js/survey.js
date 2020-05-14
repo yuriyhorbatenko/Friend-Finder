@@ -10,15 +10,19 @@ $(".btnsbmt").on("click", function (event) {
     console.log(newFriend);
 
     $.post("/api/friends", newFriend, function (data) {
-        console.log("survey.html", data);
+
         console.log(data.name);
         console.log(data.photo);
+        console.log(data.scores);
+
         $(".friend-name").text(data.name);
         $(".friend-img").attr("src", data.photo);
-        $(".modal").modal("toggle");
+        $("#myModal").modal("show");
         $("#name").val("");
         $("#url").val("");
         $(".selections").val("");
+
     });
+
 
 });

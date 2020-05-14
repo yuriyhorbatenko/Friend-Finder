@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/survey.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Find Friends</title>
 
 </head>
@@ -21,7 +24,7 @@
     <div class="row" id="">
         <div class="col-12" id="header">
             <div id="logo">
-                <a href="./index.html">
+                <a href="/">
                     <img class="img-fluid" src="img/logo1.png" id="logo1">
                     <img class="img-fluid" src="img/logo2.png" id="logo2">
                 </a>
@@ -43,18 +46,19 @@
 
                     <div class="form-group name-tag">
                         <label for="name">Enter your name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="My name is..." required>
+                        <input type="text" class="form-control name" id="name" placeholder="My name is..." required>
                     </div>
 
                     <div class="form-group url-tag">
                         <label for="url">Your IMG URL:</label>
-                        <input type="url" class="form-control" id="url" placeholder="..cute-puppy-image.jpg" required>
+                        <input type="url" class="form-control url" id="url" placeholder="..cute-puppy-image.jpg"
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label id="questionList" for="q1">Your uncle Frank just made a parody of you. It is really
                             funny. How do you handle it?</label>
-                        <select class="form-control" id="q1" required>
+                        <select class="form-control selections" id="q1" required>
                             <option value=""></option>
                             <option value="1">I scream obscenities at Uncle Frank.</option>
                             <option value="3">I tell them it hurts and they went too far.</option>
@@ -66,7 +70,7 @@
                         <label id="questionList" for="q2">Your friends decide to dress you up as a drag queen and then
                             put you out in public park while you sleep. You wake up to find people staring at you.
                             You...</label>
-                        <select class="form-control" id="q2" required>
+                        <select class="form-control selections" id="q2" required>
 
                             <option value="1">Get frustrated and go back and tell your friends that wasn't funny.
                             </option>
@@ -78,7 +82,7 @@
 
                     <div class="form-group">
                         <label id="questionList" for="q3">Your brother decides to tickle torture you. You...</label>
-                        <select class="form-control" id="q3" required>
+                        <select class="form-control selections" id="q3" required>
 
                             <option value="1">Laugh but then later tell him that wasn't fun.</option>
                             <option value="3">Come back later and tickle him in his ticklish spot for an hour straight
@@ -91,7 +95,7 @@
                         <label id="questionList" for="q4">You are walking when your brother/sister the prankster yanks
                             down your
                             pants in front of your boy/girlfriend. You...</label>
-                        <select class="form-control" id="q4" required>
+                        <select class="form-control selections" id="q4" required>
 
                             <option value="1">Blush and tell him that hurt.</option>
                             <option value="3">Blush but laugh.</option>
@@ -102,7 +106,7 @@
                     <div class="form-group">
                         <label id="questionList" for="q5">Your pastor decides it would be funny to make you belly dance
                             for the church. You...</label>
-                        <select class="form-control" id="q5" required>
+                        <select class="form-control selections" id="q5" required>
 
                             <option value="1">Tell him no thanks.</option>
                             <option value="3">Decide to attend another church.</option>
@@ -113,7 +117,7 @@
                     <div class="form-group">
                         <label id="questionList" for="q6">Your friend signed up for you to spend the day with Ronald
                             McDonald. So now you have to do everything with Ronald McDonald. You...</label>
-                        <select class="form-control" id="q6" required>
+                        <select class="form-control selections" id="q6" required>
 
                             <option value="1">Wish you were never born.</option>
                             <option value="3">Blush with shame.</option>
@@ -122,9 +126,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label id="questionList" for="q6">A frog asked a princess to kiss him and he would turn into a
+                        <label id="questionList" for="q7">A frog asked a princess to kiss him and he would turn into a
                             prince. What did she do?</label>
-                        <select class="form-control" id="q6" required>
+                        <select class="form-control selections" id="q7" required>
 
                             <option value="1">Asked him to repeat what he said in Spanish.</option>
                             <option value="3">Sold the talking frog for a high price on Ebay.</option>
@@ -146,31 +150,25 @@
     </div>
 
 
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-xl text-center" role="document">
-            <div class="modal-content text-center">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title">Best Match for you:</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Best Match for you:</h4>
                 </div>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <p class="friend-name"></p>
                     <img class="friend-img">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
+
         </div>
     </div>
-
-
-
-
-
-
 
 
 

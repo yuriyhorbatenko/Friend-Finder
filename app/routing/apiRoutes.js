@@ -29,8 +29,8 @@ module.exports = function (app) {
 
         var scoreDiffArr = [];
 
-        for (var i = 0; i < friendData.length; i++) {
-            var savedScores = friendData[i].scores;
+        for (var i = 0; i < friendsData.length; i++) {
+            var savedScores = friendsData[i].scores;
             var difference = 0;
 
             for (var j = 0; j < newScoresArr.length; j++) {
@@ -47,9 +47,9 @@ module.exports = function (app) {
 
         console.log(match);
 
-        var matchedFriend = friendData[match];
+        var matchedFriend = friendsData[match];
         res.json(matchedFriend);
-        friendData.push(newFriend);
+        friendsData.push(newFriend);
 
     });
 
