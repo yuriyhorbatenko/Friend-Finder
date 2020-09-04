@@ -3,20 +3,20 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href='https://fonts.googleapis.com/css?family=Walter Turncoat' rel='stylesheet'>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     <link rel="stylesheet" href="css/survey.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <title>Find Friends</title>
-
 </head>
 
 <body>
@@ -59,10 +59,11 @@
                         <label id="questionList" for="q1">Your uncle Frank just made a parody of you. It is really
                             funny. How do you handle it?</label>
                         <select class="form-control selections" id="q1" required>
-                            <option value=""></option>
+
                             <option value="1">I scream obscenities at Uncle Frank.</option>
                             <option value="3">I tell them it hurts and they went too far.</option>
                             <option value="5">I laugh really hard. I can take a joke.</option>
+                            <option value=""></option>
                         </select>
                     </div>
 
@@ -104,13 +105,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label id="questionList" for="q5">Your pastor decides it would be funny to make you belly dance
-                            for the church. You...</label>
+                        <label id="questionList" for="q5">You're on a date and it's going nowhere. You...</label>
                         <select class="form-control selections" id="q5" required>
 
-                            <option value="1">Tell him no thanks.</option>
-                            <option value="3">Decide to attend another church.</option>
-                            <option value="5">Think my pastor is awesome!</option>
+                            <option value="1">Politely cut the date short.</option>
+                            <option value="3">Say 'this isn't working' and get the hell out of there.</option>
+                            <option value="5">Continue on and try to make the best of it.</option>
                         </select>
                     </div>
 
@@ -126,18 +126,19 @@
                     </div>
 
                     <div class="form-group">
-                        <label id="questionList" for="q7">A frog asked a princess to kiss him and he would turn into a
-                            prince. What did she do?</label>
+                        <label id="questionList" for="q7">For your birthday, your friends want you to choose your ideal
+                            night out. What do you choose?</label>
                         <select class="form-control selections" id="q7" required>
 
-                            <option value="1">Asked him to repeat what he said in Spanish.</option>
-                            <option value="3">Sold the talking frog for a high price on Ebay.</option>
-                            <option value="5">Had frog legs for dinner.</option>
+                            <option value="1">Coffee and conversation.</option>
+                            <option value="3">A night out dancing.</option>
+                            <option value="5">You're torn between the new all-ages club, the zoo, and bungee jumping.
+                            </option>
                         </select>
                     </div>
 
                     <div id="buttonSbmt">
-                        <input class="button-primary btnsbmt" type="submit" id="submit">
+                        <button class="button-primary btnsbmt" type="submit" id="submit">Submit</button>
                     </div>
                 </form>
 
@@ -150,12 +151,11 @@
     </div>
 
 
-    <div class="modal fade" id="myModal" role="dialog">
+    <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Best Match for you:</h4>
                 </div>
                 <div class="modal-body">
@@ -163,29 +163,18 @@
                     <img class="friend-img">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <script type="text/javascript" src="js/survey.js"></script>
 
+    <footer>Copyright&copy;</footer>
 </body>
 
-<footer>Copyright&copy;</footer>
+
 
 </html>
